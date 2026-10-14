@@ -30,7 +30,7 @@ jobs:
 
       - name: Compilar imagen Docker
         run: |
-          docker build -t ${{ env.DOCKER_IMAGE }}:${{ github.sha }} ./django-DefectDojo
+          docker build -t ${{ env.DOCKER_IMAGE }}:${{ github.sha }} ./
 
       - name: Exportar imagen a tarball efímero
         run: |
