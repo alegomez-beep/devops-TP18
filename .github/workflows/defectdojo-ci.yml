@@ -150,10 +150,10 @@ jobs:
         uses: ivanamat/defectdojo-import-scan@v1
         with:
           defectdojo_url: ${{ env.DEFECTDOJO_URL }}
-          api_key: ${{ env.DEFECTDOJO_TOKEN }}
+          token: ${{ env.DEFECTDOJO_TOKEN }}
           product_id: ${{ env.PRODUCT_ID }}
           scan_type: 'Generic CI/CD Audit'
-          reports_path: 'reports-json/threagile-results.json'
+          file: 'reports-json/threagile-results.json'
           engagement_name: 'CI/CD Automated Security Audits'
           auto_create_context: true
 
@@ -164,10 +164,10 @@ jobs:
         uses: ivanamat/defectdojo-import-scan@v1
         with:
           defectdojo_url: ${{ env.DEFECTDOJO_URL }}
-          api_key: ${{ env.DEFECTDOJO_TOKEN }}
+          token: ${{ env.DEFECTDOJO_TOKEN }}
           product_id: ${{ env.PRODUCT_ID }}
           scan_type: 'Semgrep JSON Report'
-          reports_path: 'reports-json/semgrep-results.json'
+          file: 'reports-json/semgrep-results.json'
           engagement_name: 'CI/CD Automated Security Audits'
           auto_create_context: true
 
@@ -178,10 +178,10 @@ jobs:
         uses: ivanamat/defectdojo-import-scan@v1
         with:
           defectdojo_url: ${{ env.DEFECTDOJO_URL }}
-          api_key: ${{ env.DEFECTDOJO_TOKEN }}
+          token: ${{ env.DEFECTDOJO_TOKEN }}
           product_id: ${{ env.PRODUCT_ID }}
           scan_type: 'Trivy Scan'
-          reports_path: 'reports-json/trivy-container-results.json'
+          file: 'reports-json/trivy-container-results.json'
           engagement_name: 'CI/CD Automated Security Audits'
           auto_create_context: true
 
@@ -192,10 +192,10 @@ jobs:
         uses: ivanamat/defectdojo-import-scan@v1
         with:
           defectdojo_url: ${{ env.DEFECTDOJO_URL }}
-          api_key: ${{ env.DEFECTDOJO_TOKEN }}
+          token: ${{ env.DEFECTDOJO_TOKEN }}
           product_id: ${{ env.PRODUCT_ID }}
           scan_type: 'Gitleaks Scan'
-          reports_path: 'reports-json/gitleaks-report.json'
+          file: 'reports-json/gitleaks-report.json'
           engagement_name: 'CI/CD Automated Security Audits'
           auto_create_context: true
 
